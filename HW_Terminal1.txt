@@ -73,4 +73,5 @@ $ curl 'http://162.55.220.72:5005/terminal-hw-request'
  mkdir f_1_1 f_1_2 f_1_3
  ls -la
  mv D:/yuliya/git_test/hw_1/f_1/test1.txt D:/yuliya/git_test/hw_1/f_1/test2.txt D:/yuliya/git_test/hw_1/f_2
+ ./bash
 =====================
