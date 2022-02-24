@@ -1,0 +1,77 @@
+GitHub. HW_2
+// На локальном репозитории сделать ветки для:
+- Postman - git branch Postman
+- Jmeter - git branch JMETER
+- CheckLists - git branch CheckLists
+- Bag Reports - git branch Bug_Reports
+- Charles - $ git branch Charles
+- Mobile testing -$ git branch Mobile_testing
+
+//Запушить все ветки на внешний репозиторий - 
+git push -u origin Postman
+git push -u origin JMETER 
+git push -u origin CheckLists
+git push -u origin Bug_Reports 
+git push -u origin Charles
+git push -u origin Mobile_testing
+
+//В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+$ git checkout Bug_Reports
+$ touch bug_reports.txt
+$ vim bug_reports.txt
+нажать i
+Структура баг-репорта
+ 1.Заголовок ошибки (Title)-краткое описание найденной ошибки 
+ 2.Описание ошибки (Summary)-
+ 3.Начальные условия (Precondition)-если есть специфичные действия или шаги воспроизведения достаточно объемные, то указываются начальные условия
+ 4.Шаги воспроизведения (Steps To Reproduce)-Шаги, при которых повторяется найденная ошибка
+Напрмер:
+  Быть авторизованным в системе.
+  Находиться на главной странице.  
+ 5.Ожидаемый результат (Expected Result)-pезультат, который должен быть при выполнении шагов,
+ 6.Фактический результат (Actual Result)-указывается результат, который получил тестировщик при выполнении описанных шагов.
+ 7.Вложения (Attachments)-при необходимости тестировщики прикладывают скриншоты, видео воспроизведения ошибки, логи выполнения программы.
+ 8.Критичность(Severity)-показывает, насколько серьезные последствия от дефекта с точки зрения влияния на систему 
+ S1 Блокирующий (Blocker)
+ S2 Критический (Critical)
+ S3 Значительный (Major)
+ S4 Незначительный (Minor)
+ S5 Тривиальный (Trivial)
+ 9.Приоритет (Priority)-очередь, в которой баг будет исправляться (Высокий -> Средний -> Низкий)
+ нажать esc : wq
+ 
+ // Запушить структуру багрепорта на внешний репозиторий
+ $ git add .
+ $ git commit -m"new bug_reports"
+ $ git push
+ 
+ //Вмержить ветку Bag Reports в Main
+ $ git checkout main
+ 
+ 
+ //Запушить main на внешний репозиторий.
+ $ git push -u origin main
+ 
+ //В ветке CheckLists набросать структуру чек листа.
+ $ git checkout CheckLists
+ $ vim checklists.txt
+ нажать i
+ Структура чек-листа
+   1.Элемент страницы
+   2.Проверка 
+   3.Ожидаемый результат
+   4.Статус -Passed (пройден) или Failed (не пройден).
+   5.Комментарии
+ нажать esc : wq   
+
+ //Запушить структуру на внешний репозиторий
+ $ git add .
+ $ git commit -m"new files"
+ $ git push
+ 
+ //На внешнем репозитории сделать Pull Request ветки CheckLists в main
+ Pull Request 
+
+ // Синхронизировать Внешнюю и Локальную ветки Main
+ $ git checkout main
+ $ git pull
