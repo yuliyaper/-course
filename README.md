@@ -17,4 +17,4 @@
 * Просмотр содержимого длинного файла
 * Вывод даты и времени
 -----------------------------------------
-Решение задания можно посмотреть в файле [https://github.com/yuliyaper/Terminal_Linux/blob/main/HW_Terminal1.txt](тут)
+Решение задания можно посмотреть в файле[https://github.com/yuliyaper/Terminal_Linux/blob/main/HW_Terminal1.txt](url)
